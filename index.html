@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="back-header">
+        <div class="header-cab contenedor">
+            <h1>FACTURA</h1>
+            <nav>
+                <a href="index.html">Ingresar</a>
+                <a href="editar.php">Editar</a>
+            </nav>
+        </div>
+    </header>
+
+    <form id="formulario" action="" class="contenedor ">
+
+        <div class="flex">
+            <div>
+                <label for="codPersona">CEDULA:</label>
+                <input class="inputs" type="text" name="cedula" id="cedula" placeholder="Ingrese la cedula">
+            </div>
+            <div>
+                <label for="nombre">NOMBRE:</label>
+                <input class="inputs" type="text" name="nombre" id="nombre" placeholder="Ingrese el Nombre">
+            </div>
+            <div>
+                <label for="direccion">DIRECCIÓN:</label>
+                <input class="inputs" type="text" name="direccion" id="direccion" placeholder="Ingrese la direccion">
+            </div>
+            <div>
+                <label for="telefono">TELEFONO:</label>
+                <input class="inputs" type="text" name="telefono" id="telefono" placeholder="Ingrese el telefono">
+            </div>
+            <div>
+                <div>
+                    <input type="radio" name="radio" checked="checked" value="doce" onclick="cambiar()"> IVA 12%
+                </div>
+                <div>
+                    <input type="radio" name="radio" value="cero" onclick="cambiar()"> IVA 0%
+                </div>
+            </div>
+        </div>
+
+        <aside class="aside contenedor">
+            <table>
+                <tr style="text-align:left;">
+                    <th>Nombre Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>IVA</th>
+                    <th>% IVA</th>
+                    <th>Subtotal</th>
+                    <th>Total </th>
+
+                </tr>
+                <tr>
+                    <td> <input style="border: 0px;" id="nombreProducto" type="text" value="" placeholder="Nombre"></td>
+                    <td> <input style="border: 0px;" id="cantidad" type="text" placeholder="0"></td>
+                    <td> <input style="border: 0px;" id="precio" type="text" placeholder="0"></td>
+                    <td> <input style="border: 0px;" id="iva" type="text" disabled="disabled"></td>
+                    <td> <input style="border: 0px;" id="porcIva" type="text" disabled="disabled"></td>
+                    <td> <input style="border: 0px;" id="subtotal" type="text" disabled="disabled"></td>
+                    <td> <input style="border: 0px;" id="total" style="width:100%" disabled="disabled" type="text" value="112.00"></td>
+                </tr>
+            </table>
+        </aside>
+        <div style="text-align: right; margin-top: 15px;" class="total">
+            <p>TOTAL:</p>
+            <P id="totales"></P>
+        </div>
+
+        <input id="enviar" type="submit" value="ENVIAR">
+        <input id="hidden" type="hidden" value="crear">
+    </form>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+
+</html>

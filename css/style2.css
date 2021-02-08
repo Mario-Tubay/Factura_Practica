@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-header {
+    background-color: #6c757d;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contenedor p {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.flex {
+    margin-top: 30px;
+    display: flex;
+}
+
+.flex .form {
+    width: 20%
+}
+
+.tabla {
+    width: 100%;
+}
+
+td,
+th {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.tabla td,
+th {
+    border: 1px solid gray;
+    margin: 0px;
+}
+
+.flex .table {
+    width: 70%;
+}
+
+.form label {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.form {
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.form div {
+    margin: 10px;
+}
+
+.inputs {
+    width: 100%;
+    height: 30px;
+}
+
+.table {
+    margin-left: 20px;
+    border: 1px solid gray;
+}
+
+.btn {
+    border: 0px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+}
+
+.btn-guardar {
+    background: #44ab71;
+    height: 40px;
+}
+
+.btn-acciones {
+    margin: 10px 2px;
+    padding: 5px 15px;
+    border: 0px;
+}
+
+td {
+    height: 40px;
+}
+
+.forms-editar {
+    width: 50%;
+    text-align: center;
+}
+
+.inputs-editar input,
+select {
+    width: 50%;
+}
+
+.cab-btn {
+    padding: 15px;
+}
+
+.cab-btn a {
+    padding: 7px 20px;
+    border-radius: 10px;
+}

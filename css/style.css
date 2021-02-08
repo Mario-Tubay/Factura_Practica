@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.back-header {
+    background: #6c757d;
+}
+
+.header-cab {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-cab nav {
+    margin-top: 20px;
+}
+
+.header-cab a {
+    margin-left: 15px;
+    color: white;
+}
+
+.header-cab h1 {
+    padding: 10px;
+    color: white;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex div {
+    margin-top: 10px;
+}
+
+.cabe-form {
+    text-align: left;
+}
+
+.aside {
+    margin-top: 10px;
+}
+
+.tabla {
+    width: 100%;
+}
+
+.tabla th,
+td {
+    border: 1px solid gray;
+}
+
+td {
+    height: 40px;
+}
+
+.btn {
+    color: black;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
